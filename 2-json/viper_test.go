@@ -25,6 +25,7 @@ func TestJSON(t *testing.T) {
 
 	assert.Equal(t, "belajar-golang-viper", config.GetString("app.name"))
 	assert.Equal(t, "1.0.0", config.GetString("app.version"))
+	assert.Equal(t, "Muhammad Nafi Furqon Diani", config.GetString("app.author"))
 	assert.Equal(t, "localhost", config.GetString("database.host"))
 	assert.Equal(t, true, config.GetBool("database.show_sql"))
 	assert.Equal(t, 3306, config.GetInt("database.port"))
